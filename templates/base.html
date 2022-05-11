@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport", content="width=device-width, initial-scale=1">
+		<link rel="stylesheet", href="{{ url_for('static', filename='css/base.css') }}">
+		<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="shortcut icon" href="#">
+		{% block link -%}
+
+		{% endblock %}
+		<title>{{ title }}</title>
+	</head>
+
+	<body>
+
+		{% block header -%}
+			<header class="nav">
+				<ul class="head">
+					<li>[$</li>
+					{% for p, r in menu.items() -%}
+						<li>
+							<a href="{{ r }}">
+								{{ p }}
+							</a>
+						</li>
+					{% endfor -%}
+					<li>$]</li>
+				</ul>
+				<a class='user'>
+					<i class='bx bxs-user-circle'></i>
+				</a>
+			</header>
+		{% endblock -%}
+
+		{% block section -%}
+			<section class="main">
+
+			</section>
+		{% endblock -%}
+
+		{% block footer -%}
+		<footer class="footer">
+			{% for i, j in urls.items() -%}
+			<a href="{{ i }}">
+				<i class='{{ j }}'></i>
+			</a>
+			{% endfor -%}
+		</footer>
+		{% endblock -%}
+
+	</body>
+</html>
