@@ -11,7 +11,8 @@ body {
 	background: -webkit-linear-gradient(315deg, rgb(9, 0, 37), rgb(60, 6, 77), rgb(37, 0, 131));
 	background: -moz-linear-gradient(315deg, rgb(9, 0, 37), rgb(60, 6, 77), rgb(37, 0, 131));
 	background: linear-gradient(315deg, rgb(9, 0, 37), rgb(60, 6, 77), rgb(37, 0, 131));
-	/*backdrop-filter: blur(10px);*/
+	background-size: 200% 200%;
+	animation: bg 10s ease infinite;
 	width: 100%;
 	height: 100%;
 }
@@ -30,7 +31,7 @@ body {
 }
 
 .head {
-	border-bottom: 2px solid #6FDFDF;
+	border-bottom: 2px solid #bfff00;
 }
 
 ul.head {
@@ -46,12 +47,13 @@ ul.head li {
     margin-right: 25px;
     padding-bottom: 20px;
     letter-spacing: 0.2em;
-    color: #FF5677;
+    color: #bfff00;
 }
 
 ul.head li a {
 	text-decoration: none;
-	color: #9145B6;
+	text-align: center;
+	color: #fc2847;
 	opacity: 0;
 	transition: 1s; 
 	animation: show 3s 1; 
@@ -59,14 +61,13 @@ ul.head li a {
 	animation-delay: 1s;
 }
 
-@keyframes show {
-	0% {
-	opacity: 0;
-	}
-
-	100% {
-	opacity: 1;
-	}
+ul.head li a:hover {
+	border-radius: 8px;
+	background: rgba(0, 0, 0, 0.3);
+	color: #E3256B;
+	margin-left: 25px;
+	margin-right: 25px;
+	padding-left: 18px;
 }
 
 .footer {
@@ -89,3 +90,36 @@ ul.head li a {
 	font-size: 30px;
 	margin-top: 10px;
 }
+
+@keyframes show {
+	0% {
+	opacity: 0;
+	}
+
+	100% {
+	opacity: 1;
+	}
+}
+
+@keyframes bg {
+	0% {
+		background-position: 0 25%;
+	}
+
+	25% {
+		background-position: 25% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	75% {
+		background-position: 25% 50%;
+	}
+
+	100% {
+		background-position: 0 25%;
+	}
+}
+
