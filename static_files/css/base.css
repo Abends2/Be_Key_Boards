@@ -17,6 +17,21 @@ body {
 	height: 100%;
 }
 
+.logo {
+	position: absolute;
+	margin-left: 40px;
+}
+
+.logo a {
+	text-decoration: none;
+}
+
+.logo img {
+	padding: 8px;
+	width: 80px;
+	height: 80px;
+}
+
 .nav {
 	display: flex;
 	align-items: center;
@@ -25,8 +40,8 @@ body {
 
 .user {
 	position: absolute;
-	color: #FF5677;
-	font-size: 30px;
+	color: #bfff00;
+	font-size: 40px;
 	right: 25px;
 }
 
@@ -34,7 +49,7 @@ body {
 	border-bottom: 2px solid #bfff00;
 }
 
-ul.head {
+.head {
 	margin: 0 auto;
 	text-align: center;
 	font-size: 20px;
@@ -42,15 +57,16 @@ ul.head {
     width: 70%;
 }
 
-ul.head li {
+.head li {
 	display: inline;
     margin-right: 25px;
     padding-bottom: 20px;
     letter-spacing: 0.2em;
     color: #bfff00;
+    font-size: 28px;
 }
 
-ul.head li a {
+.head li a {
 	text-decoration: none;
 	text-align: center;
 	color: #fc2847;
@@ -61,13 +77,13 @@ ul.head li a {
 	animation-delay: 1s;
 }
 
-ul.head li a:hover {
+.head li a:hover {
 	border-radius: 8px;
 	background: rgba(0, 0, 0, 0.3);
 	color: #E3256B;
 	margin-left: 25px;
 	margin-right: 25px;
-	padding-left: 18px;
+	padding-left: 25px;
 }
 
 .footer {

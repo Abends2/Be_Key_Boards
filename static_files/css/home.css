@@ -23,6 +23,11 @@
 	border-right: 2px solid #bfff00;
 	border-left: 2px solid #bfff00;
 	background: rgba(0, 0, 0, 0.25);
+	opacity: 0;
+	transition: 1s; 
+	animation: show 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 1s;
 }
 
 .home_slogan {
@@ -47,6 +52,10 @@
 
 .showroom_btn {
 	margin-top: 3%;
+	transition: 1s; 
+	animation: big 3s 1; 
+	animation-fill-mode: forwards; 
+	animation-delay: 1s;
 }
 
 .showroom_btn a {
@@ -59,4 +68,24 @@
 	border-radius: 12px;
 	border-width: auto;
 	background: rgba(0, 0, 0, 0.25);
+}
+
+@keyframes show {
+	0% {
+	opacity: 0;
+	}
+
+	100% {
+	opacity: 1;
+	}
+}
+
+@keyframes big {
+	0% {
+	transform: scale(0);
+	}
+
+	100% {
+	transform: scale(1);
+	}
 }

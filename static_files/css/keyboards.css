@@ -1,3 +1,62 @@
-h1 {
-	color: green;
+.conteiner {
+	text-align: center;
+	margin-top: 35px;
+}
+
+.heading {
+	text-transform: uppercase;
+	color: #fffff0;
+	font-size: 50px;
+}
+
+.main_information {
+	border: 2px solid #bfff00;
+	border-radius: 12px;
+	border-width: auto;
+	background: rgba(0, 0, 0, 0.25);
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.keycaps {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.keycaps span {
+	position: relative;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border-radius: 10px;
+	background: linear-gradient(180deg, #282828, #202020);
+	box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.25),
+	inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+	0 0 0 2px rgba(0, 0, 0, 0.75), 10px 20px 25px rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.keycaps span::before {
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 4px;
+	bottom: 14px;
+	right: 12px;
+	background: linear-gradient(90deg, #232323, #4a4a4a);
+	border-radius: 10px;
+	box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.25), 10px 5px 10px rgba(0, 0, 0, 0.15);
+	border-left: 1px solid #0004;
+	border-bottom: 1px solid #0004;
+	border-top: 1px solid #0009;
+}
+
+.keycaps span i {
+	position: relative;
+	color: #ffffff;
+	font-style: normal;
+	font-size: 24px;
+	text-transform: uppercase;
+	left: -15px;
+	top: 12px;
 }

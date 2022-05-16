@@ -5,7 +5,7 @@
 		<meta name="viewport", content="width=device-width, initial-scale=1">
 		<link rel="stylesheet", href="{{ url_for('static', filename='css/base.css') }}">
 		<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-		<link rel="shortcut icon" href="#">
+		<link rel="icon" href="static_files/photo/keys.ico" type="image/x-icon">
 		{% block link -%}
 
 		{% endblock %}
@@ -16,6 +16,11 @@
 
 		{% block header -%}
 			<header class="nav">
+				<div class="logo">
+					<a href="/home">
+						<img src="static_files/photo/keyboard-key.png", alt="logo_pic_c", class="logo_c">
+					</a>
+				</div>
 				<ul class="head">
 					<li>[$</li>
 					{% for p, r in menu.items() -%}
