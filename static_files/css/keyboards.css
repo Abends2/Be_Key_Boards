@@ -1,12 +1,14 @@
 .conteiner {
-	text-align: center;
 	margin-top: 35px;
+	color: #fffff0;
 }
 
 .heading {
 	text-transform: uppercase;
-	color: #fffff0;
 	font-size: 50px;
+	border-bottom: 2px solid #bfff00;
+	padding: 10px;
+	text-align: center;
 }
 
 .main_information {
@@ -16,8 +18,19 @@
 	background: rgba(0, 0, 0, 0.25);
 	margin-left: 50px;
 	margin-right: 50px;
+	padding: 10px;
 }
 
+.steps p {
+	border-bottom: 2px solid brown;
+	text-align: center;
+}
+
+
+
+
+
+/*
 .keycaps {
 	text-align: center;
 	margin-top: 50px;
@@ -60,3 +73,5 @@
 	left: -15px;
 	top: 12px;
 }
+
+*/
