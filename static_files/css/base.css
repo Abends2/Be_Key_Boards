@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-
 html {
 	height: 100%;
 	width: 100%;
@@ -7,7 +5,8 @@ html {
 
 body {
 	margin: 0;
-	font-family: 'Courier Prime', monospace;
+	font-family: 'IBM Plex Sans', monospace;
+	letter-spacing: 0.2em;
 	background: -webkit-linear-gradient(315deg, rgb(9, 0, 37), rgb(60, 6, 77), rgb(37, 0, 131));
 	background: -moz-linear-gradient(315deg, rgb(9, 0, 37), rgb(60, 6, 77), rgb(37, 0, 131));
 	background: linear-gradient(315deg, rgb(9, 0, 37), rgb(60, 6, 77), rgb(37, 0, 131));
@@ -67,6 +66,7 @@ body {
 }
 
 .head li a {
+	font-family: 'Rubik', monospace;
 	text-decoration: none;
 	text-align: center;
 	color: #fc2847;
