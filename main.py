@@ -49,10 +49,34 @@ def keyboards_page():
 	return render_template('keyboards.html', title="Keyboards", menu=header_urls_nav, urls=footer_urls)
 
 
-# Login page
+# Accessories
+@app.route("/accessories")
+def accessories_page():
+	return render_template('accessories.html', title="Accessories")
+
+
+# Parts
+@app.route("/parts")
+def parts_page():
+	return render_template('parts.html', title="Parts")
+
+
+# Tools
+@app.route("/tools")
+def tools_page():
+	return render_template('tools.html', title="Tools")
+
+
+# login page
 @app.route("/login")
 def login():
-	return render_template('login.html', title="Login")
+	return render_template('sign-in.html', title="Login")
+
+
+# Sign up page
+@app.route("/Sign_up")
+def sign_up():
+	return render_template('sign-up.html', title="Sign up")
 
 
 if __name__ == "__main__":

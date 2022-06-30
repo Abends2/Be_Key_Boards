@@ -1,43 +1,49 @@
 .conteiner {
 	margin-top: 35px;
 	color: #fffff0;
+	letter-spacing: 0;
 }
 
 .heading {
-	text-transform: uppercase;
 	font-size: 50px;
-	border-bottom: 2px solid #bfff00;
-	padding: 10px;
+	text-transform: uppercase;
 	text-align: center;
-}
-
-.main_information {
+	background: rgba(0, 0, 0, 0.25);
 	border: 2px solid #bfff00;
+	border-bottom: 2px solid #bfff00;
 	border-radius: 12px;
 	border-width: auto;
-	background: rgba(0, 0, 0, 0.25);
 	margin-left: 50px;
 	margin-right: 50px;
 	padding: 10px;
 }
 
+.main_information {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
 .steps p {
-	border-bottom: 2px solid brown;
 	text-align: center;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.steps div {
+	background: rgba(0, 0, 0, 0.25);
+	border-left: 2px solid;
+	border-color: #bfff00;
+	padding-left: 20px;
 }
 
 .img-1 {
+	height: 750px;
+	width: 1200px;
 	
-	height: 250px;
-	width: 400px;
-	
-
 }
 
 
+/*keys*/
 
-
-/*
 .keycaps {
 	text-align: center;
 	margin-top: 50px;
@@ -81,4 +87,3 @@
 	top: 12px;
 }
 
-*/

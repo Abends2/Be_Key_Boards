@@ -5,7 +5,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-	/*
+	
 	.head li {
 		color: #fff;
 	}
@@ -13,7 +13,7 @@
 	.head li a {
 		color: #fff;
 	}
-	*/
+
 }
 
 /* Medium Devices, Desktops */
